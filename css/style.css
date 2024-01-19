@@ -76,9 +76,6 @@ h6,
 }
 
 /*** Navbar ***/
-nav {
-  border-bottom: 2px solid #0554bd;
-}
 .navbar-light .navbar-nav .nav-link {
   position: relative;
   margin-left: 25px;
@@ -111,7 +108,12 @@ nav {
 .sticky-top.navbar-light .navbar-brand img {
   max-height: 45px;
 }
-
+/* nav {
+  border-bottom: 4px solid #0554bd;
+} */
+.navbar-light {
+  border-bottom: 4px solid #0554bd;
+}
 @media (max-width: 991.98px) {
   .sticky-top.navbar-light {
     width: 100%;
@@ -146,7 +148,7 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
-    border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+    border-bottom: 4px solid #0554bd;
     z-index: 999;
   }
 
@@ -282,6 +284,11 @@ nav {
   background-size: contain;
   transition: 0.5s;
 }
+.about .service-icon {
+  background-image: none;
+  width: 80px;
+  height: 80px;
+}
 
 .service-item:hover .service-icon {
   color: var(--primary);
@@ -364,7 +371,24 @@ nav {
   transition: 0.5s;
   z-index: 1;
 }
-
+.team-item img {
+  width: 100%;
+}
+@media (max-width: 520px) {
+  .team-item img {
+    width: 300px;
+  }
+}
+@media (max-width: 520px) {
+  .team-item img {
+    width: 250px;
+  }
+}
+@media (max-width: 360px) {
+  .team-item img {
+    width: 210px;
+  }
+}
 .team-item::after {
   position: absolute;
   content: "";
