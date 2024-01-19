@@ -76,6 +76,9 @@ h6,
 }
 
 /*** Navbar ***/
+nav {
+  border-bottom: 2px solid #0554bd;
+}
 .navbar-light .navbar-nav .nav-link {
   position: relative;
   margin-left: 25px;
